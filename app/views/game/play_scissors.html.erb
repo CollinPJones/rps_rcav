@@ -27,11 +27,11 @@
       <div class="panel panel-success">
 
         <div class="panel-heading">
-          <h2 class="panel-title text-center">Rock</h2>
+          <h2 class="panel-title text-center">Scissors</h2>
         </div>
 
         <div class="panel-body">
-          <img class="img-responsive" src="http://localhost:3000/assets/images/rock.png">
+          <img class="img-responsive" src="http://localhost:3000/assets/images/scissors.png">
         </div>
 
       </div>
@@ -68,17 +68,17 @@
     </div>
   </div>
 
-<!-- game results -->
+  <!-- game results -->
   <div class="row">
     <div class="col-sm-12">
       <div class="well text-center">
         <h1>
           <% if @computer_move == "rock" %>
-          <span class="label label-warning">You tied!</span>
-          <% elsif @computer_move == "scissors" %>
-          <span class="label label-success">You won!</span>
-          <% else %>
           <span class="label label-danger">You lost!</span>
+          <% elsif @computer_move == "scissors" %>
+          <span class="label label-warning">You tied!</span>
+          <% else %>
+          <span class="label label-success">You won!</span>
           <% end %>
         </h1>
       </div>
